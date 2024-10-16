@@ -7,7 +7,7 @@
 
 
 /**************************************************** C++ ****************************************************/
-//Approach-1 : Simle and straight forward
+//Approach-1 : Simple and straight forward
 //T.C : O(n)
 //S.C : O(n)
 class MyCalendarTwo {
@@ -28,10 +28,10 @@ public:
     }
     
     bool book(int start, int end) {
-        //check if tripple booking is being created or not
+        //check if triple booking is being created or not
         for(pair<int, int> region : doubleOverlappedRegion) {
             if(checkOverlap(region.first, region.second, start, end)) {
-                return false; //tripple booking created
+                return false; //triple booking created
             }
         }
 
@@ -50,7 +50,7 @@ public:
 
 
 /**************************************************** JAVA ****************************************************/
-//Approach-1 : Simle and straight forward
+//Approach-1 : Simple and straight forward
 //T.C : O(n)
 //S.C : O(n)
 class MyCalendarTwo {
